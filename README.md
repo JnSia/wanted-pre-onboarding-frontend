@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+### 4월 원티드 프리온보딩 사전과제를 위한 git repository 입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 실행 방법
 
-## Available Scripts
+git clone 후, 'npm install'를 수행해 주세요.
 
-In the project directory, you can run:
+리액트를 제외한 라이브러리는 react-router-dom 만 사용했으며,
+dependencies에 명시되어 있지만 axios는 사용하지 않았습니다.
 
-### `npm start`
+'npm run start' 또는 'npm start'를 통해
+http://localhost:3000에서 프로젝트를 실행할 수 있습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+회원가입을 먼저 수행해야 하며,
+회원가입이 성공적으로 수행되면 로그인 페이지로 다시 돌아옵니다.
+(회원가입 시, '@' 이전 문자열에 숫자가 없을 경우
+회원가입이 제대로 수행되지 않을 수 있습니다.)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+회원가입에 작성한 이메일과 비밀번호를 통해 로그인을 진행할 수 있으며,
+로그인이 성공하면 localstorage에 jwt 토큰이 저장되면서 투두 페이지로 이동합니다.
 
-### `npm test`
+만약 의도적으로 url을 변경할 경우,
+localstorage에 저장된 토큰의 유무에 따라서 로그인 페이지 또는 투두 페이지가 제한될 것입니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 배포 사이트
 
-### `npm run build`
+https://wanted-pre-onboarding-frontend-jnsia.netlify.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+'npm run build'를 수행하여 생성된 build 폴더를 netlify를 통해 배포하였습니다. 접속하여 결과물을 확인할 수 있습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 데모 영상
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![wanted](https://user-images.githubusercontent.com/108898787/231901009-bf5f7b87-70c8-4052-b845-9b24564e3023.gif)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+기본적인 흐름만 영상으로 담았으며,
+의도적인 url 변경과 로그인 후 localstroage 확인을 원하신다면
+위의 배포 사이트 링크를 통해 직접 확인하실 수 있습니다.
