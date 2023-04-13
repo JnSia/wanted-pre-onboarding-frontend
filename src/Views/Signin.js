@@ -45,7 +45,7 @@ function Signin() {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem('@isLogin', data.access_token);
-        navigate('/Todo');
+        window.location.replace('/');
       });
   }
 

@@ -1,12 +1,30 @@
 .App {
-  text-align: center;
-}
-
-.signup,
-.signin {
+  text-align: left;
   display: flex;
   flex-direction: column;
   margin-top: 200px;
   justify-content: center;
   align-items: center;
+}
+
+div {
+  padding-right: 20px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
 }
